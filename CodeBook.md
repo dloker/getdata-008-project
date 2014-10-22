@@ -28,7 +28,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-### The dataset includes the following files:
+### The original UCI HAR Dataset includes the following files:
 
 - 'README.txt'
 
@@ -121,9 +121,9 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
 
 ### The addition of subject and activity 
 
-subject - the subject id corresponding to each observation.
+subject - the subject id corresponding to each observation. Taken from subject_train.txt and subject_test.txt
 
-activity - the activity name corresponding to each observation.  This activity can be one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, or LAYING. The activity is what the subject was doing as the time of the observation.
+activity - the activity name corresponding to each observation.  This activity can be one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, or LAYING. The activity is what the subject was doing as the time of the observation. Taken from y_train.txt and y_test.txt merged with activity_labels.txt
 
 ## Tidy Process
 
@@ -131,10 +131,11 @@ The following operations are performed on the original data set, which consisted
 
 * Merge training and testing data into one.
 * Subset features to those with 'mean()' and 'std()' in them. In other words, measurements on the mean and the standard deviation of those measurements.
-* The activity names were taken from activity_labels.txt and associated with their corresponding activity labels in y_train.txt and y_test.txt
+* The activity names were taken from activity_labels.txt and associated with their corresponding activity labels in y_train.txt and y_test.txt. This gives the activities human readable names instead of simply ids.
+* The feature names (taken from features.txt) were used as variable names in the data set to give the merged dataset descriptive variable names
+* Finally, the tidy dataset was created using the average of each variable for each activity and each subject
 
-License:
-========
+## License:
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
