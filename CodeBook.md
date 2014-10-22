@@ -2,8 +2,8 @@ The Code Book
 =============
 
 This Code Book takes on the following format:
-* The original data
-* Feature/Variable Details - containing all of the details of all variables before pruning. All of the variables are explained.
+* The original data - a complete description of the original dataset before tidying and its files.
+* Feature/Variable Details - containing all of the details of all variables before pruning. All of the variables of the original and tidied dataset are explained.
 * Tidy Process - the process by which we selected the variables that are produced in the output.
 
 ## The Original Data
