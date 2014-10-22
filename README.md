@@ -1,13 +1,13 @@
 Getting and Cleaning Data Course Project
 ========================================
 
-*Author:* David Loker
+**Author:** David Loker
 
 This project contains the following files:
 
 - README.md
 - CodeBook.md: Details on the original data set, the feature/variable descriptions, and the transformations the data underwent to become "tidy".
-- run_analysis.R: Script that transforms the original data and tidies it. The resulting variable *tidyAveragedFitnessDataSet* contains the tidied data set. It is also written out to a file.
+- run_analysis.R: Script that transforms the original data and tidies it. The resulting variable **tidyAveragedFitnessDataSet** contains the tidied data set. It is also written out to a file.
 
 ## Project Description
 
@@ -19,7 +19,7 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-For this project, we create one R script called *run_analysis.R* that does the following: 
+For this project, we create one R script called **run_analysis.R** that does the following: 
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
 * Uses descriptive activity names to name the activities in the data set
