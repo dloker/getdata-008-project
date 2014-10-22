@@ -15,7 +15,7 @@ Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advan
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Here are the data for the project: 
+Here are the data for the project (See CodeBook.md for details): 
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
@@ -25,6 +25,8 @@ For this project, we create one R script called **run_analysis.R** that does the
 * Uses descriptive activity names to name the activities in the data set
 * Appropriately labels the data set with descriptive variable names. 
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+See CodeBook.md for further details.
 
 ## How run_analysis.R works
 
